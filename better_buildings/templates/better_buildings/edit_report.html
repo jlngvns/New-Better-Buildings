@@ -12,4 +12,11 @@
     <button name="submit">Save changes</button>
   </form>
 
+  <form method="post">
+    {% csrf_token %}
+    <!--{{ delete_form.confirm.label_tag }}
+    {{ delete_form.confirm }}-->
+    <button type="submit" name="delete">Delete Report</button>
+  </form>
+
 {% endblock content %}
